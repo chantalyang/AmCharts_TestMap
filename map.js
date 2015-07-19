@@ -1,5 +1,6 @@
  // add all your code to this method, as this will ensure that page is loaded
     AmCharts.ready(function() {
+      
         // create AmMap object
         var map = new AmCharts.AmMap();
         // set path to images
