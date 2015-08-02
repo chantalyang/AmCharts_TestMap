@@ -1,8 +1,11 @@
+//create AmMap object
+        var map = new AmCharts.AmMap();
+
+
  // add all your code to this method, as this will ensure that page is loaded
     AmCharts.ready(function() {
       
-        // create AmMap object
-        var map = new AmCharts.AmMap();
+        
         // set path to images
         map.pathToImages = "ammap/images/";
 
@@ -40,3 +43,42 @@
         // write the map to container div
         map.write("mapdiv");
     });
+
+ AmCharts.makeChart("mapdiv",
+ {
+dataProvider: [{
+    "status": "ok", 
+    "server_id": "stat-app1", 
+    "status_code": 200, 
+    "version": "2.2", 
+    "cached": true, 
+    "see_also": [], 
+    "time": "2015-07-22T17:51:15.875721", 
+    "messages": [], 
+    "data_call_status": "supported - connecting to ursa for all data sets", 
+    "process_time": 148, 
+    "query_id": "3fbf480c-309a-11e5-a360-782bcb34677e", 
+    "data": {
+        "query_time": "2015-07-07T00:00:00", 
+        "resource": "41.67.17.1", 
+        "locations": [
+            {
+                "city": "Khartoum", 
+                "country": "SD", 
+                "longitude": 32.5342, 
+                "covered_percentage": 100.0, 
+                "prefixes": [
+                    "41.67.16.0/21"
+                ], 
+                "latitude": 15.5881
+            }
+        ], 
+        "unknown_percentage": 0.0
+    }
+}]
+ } );
+
+
+ 
+
+
