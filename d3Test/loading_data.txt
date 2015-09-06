@@ -1,0 +1,23 @@
+
+         /*   d3.csv("nrens.csv", function(error, data){
+                if (error){
+                    console.log(error);
+                }
+                else{
+                    console.log(data);
+                }
+            }
+            global_dataset = data;
+                ); */
+
+             /*d3.json("ten-ips-results-json.json", function(error, json){
+                if (error){
+                    console.log(error);
+                }
+                else{
+                    console.log(json);
+                
+            
+            global_dataset = json;
+            }
+            }    ); */

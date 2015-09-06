@@ -1,34 +1,26 @@
-<!DOCTYPE html>
 <html>
   <head>
-   <style type="text/css">html,
-body {
-  height: 100%;
-}
-#map-canvas {
-  min-width: 200px;
-  width: 50%;
-  min-height: 200px;
-  height: 80%;
-}</style>
-<!-- Check API Key Settings -->
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMjT-ombpBmr4mw9JVqLNTG8Io0frW3LE
-">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>AfriNREN Map</title>
+    <style>
+      html, body {
+        height: 50px;
+        margin: 10px;
+        padding: 0;
       }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
+      #map {
+        height: 600px;
+        width: 800px;
+      }
+    </style>
   </head>
-  <body>
-<div id="map-canvas" style= "height: 400px; width 600px"></div>
+   <body>
+    <div id="map"></div>
+    <script type="text/javascript" src="map.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+    
+    </script>
   </body>
 </html>
